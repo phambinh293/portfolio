@@ -41,19 +41,19 @@ const About = () => {
   return (
     <section
       id="about"
-      className="h-screen flex-center relative md:p-0 px-5 mt-10"
+      className="w-full flex-center relative"
     >
       <GradientSpheres
         sphere1Class="about-gradient-sphere about-sphere-1"
         sphere2Class="about-gradient-sphere about-sphere-2"
       />
-      <div className="w-full h-full container md:my-20 relative z-10">
+      <div className="w-full container relative z-10 md:mt-20 mt-10">
         <TitleHeader
           title="About Me"
           number="01"
           text="Passionate Creator, Lifelong Learner"
         />
-        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 min-h-screen md:mt-0">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 min-h-screen ">
           <div className="lg:col-span-2 md:col-span-2 col-span-1 flex flex-col  place-content-center items-center md:items-start md:text-left max-w-[600px]"
           >
             <h1 className="title md:text-2xl text-xl">
