@@ -53,9 +53,8 @@ const About = () => {
           number="01"
           text="Passionate Creator, Lifelong Learner"
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 place-items-center min-h-screen md:mt-0">
-          <div
-            className="md:col-span-2 col-span-1 flex flex-col items-center md:items-start md:text-left max-w-[600px]"
+        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 min-h-screen md:mt-0">
+          <div className="lg:col-span-2 md:col-span-2 col-span-1 flex flex-col  place-content-center items-center md:items-start md:text-left max-w-[600px]"
           >
             <h1 className="title md:text-2xl text-xl">
               I'm Pham Quang Binh, a Frontend Developer with a passion for
@@ -80,7 +79,7 @@ const About = () => {
               </a>
             </div>
           </div>
-          <div className="md:block hidden side-image">
+          <div className="lg:col-span-2 md:col-span-2  hidden lg:flex flex-col  place-content-center items-center md:items-start md:text-left side-image ">
             <img
               alt="book"
               className="inline-block md:w-2xl w-xl absolute img-about z-10"
@@ -116,7 +115,7 @@ const About = () => {
               className="inline-block md:w-2xl w-xl absolute img-about z-10"
               src="./images/ab-table.svg"
             />
-          </div>
+          </div> 
         </div>
       </div>
     </section>

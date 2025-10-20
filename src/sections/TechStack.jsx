@@ -24,6 +24,9 @@ const TechStack = () => {
               {iconsList.map((icon, index) => (
                 <TechIcon key={index} icon={icon} />
               ))}
+               {iconsList.map((icon, index) => (
+                <TechIcon key={index} icon={icon} />
+              ))}
             </div>
           </div>
         </div>
