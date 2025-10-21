@@ -69,46 +69,60 @@ const Carousel = () => {
               <a
                 href={slide.src}
                 target="_blank"
-                className="cursor-none block h-[80%]"
-                onMouseEnter={() => { { setCursorActive(true), setCursorText("View Source") } }}
-                onMouseLeave={() => { setCursorActive(false), setCursorText("") }}
+                className="relative block h-[80%]"
+                onMouseEnter={() => {
+                  setCursorActive(true);
+                  setCursorText("View Source");
+                }}
+                onMouseLeave={() => {
+                  setCursorActive(false);
+                  setCursorText("");
+                }}
               >
                 <img
                   src={slide.img}
                   alt="slide"
                   className="w-full h-full object-cover object-center"
                 />
+
+                {/* Overlay chỉ hiển thị trên màn nhỏ */}
+
+                <div className="absolute top-2 right-2 bg-white/80 text-xl text-black px-2 py-1 rounded md:hidden">
+                  🔗 Source
+                </div>
               </a>
 
               <div className="absolute w-full h-20 bottom-0 left-0 bg-black-300 bg-opacity-90 px-5">
                 <div className="w-full h-full flex justify-between items-center">
                   <div className="flex-center gap-2">
-
                     <p className="md:text-2xl text-white-50 opacity-80">
                       {index + 1}.
                     </p>
                     <p className="md:text-2xl text-white-50 opacity-80">
                       {slide.title}
                     </p>
-
                   </div>
-                  <div className="flex-center gap-5">
+                  <div className="flex items-center justify-center gap-5">
                     <a
                       href={slide.link}
                       target="_blank"
-                      className="cursor-none flex-center"
-                      onMouseEnter={() => { { setCursorActive(true), setCursorText("View Demo") } }}
-                      onMouseLeave={() => { setCursorActive(false), setCursorText("") }}
+                      rel="noopener noreferrer"
+                      className="cursor-none group inline-flex items-center gap-2 px-4 py-2 border border-blue-400 rounded-full hover:bg-blue-400 hover:text-white transition-all duration-300 shadow-md"
+                      onMouseEnter={() => {
+                        setCursorActive(true);
+                        setCursorText("View Demo");
+                      }}
+                      onMouseLeave={() => {
+                        setCursorActive(false);
+                        setCursorText("");
+                      }}
                     >
-                      <p className="md:text-2xl text-sm hidden md:block text-white-50 opacity-80">
-                        Demo
-                      </p>
+                      <p className="md:text-lg text-sm hidden md:block">Demo</p>
                       <img
                         src="/images/arrowupright.svg"
                         alt="arrow"
-                        className="md:size-10 size-7"
+                        className="md:w-6 md:h-6 w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300"
                       />
-
                     </a>
                   </div>
                 </div>

@@ -80,7 +80,7 @@ const Hero = () => {
           <HeroExperoence />
         </div>
       </div>
-      <div className="absolute md:gap-5 gap-1 bottom-20 right-[50%]">
+      <div className="absolute md:gap-5 gap-1 bottom-20 right-[50%] md:block hidden">
         <img
           src="./images/scroll-to-bottom-line.svg"
           alt="scroll-to-bottom-line"

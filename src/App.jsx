@@ -7,12 +7,14 @@ import TechStack from "./sections/TechStack";
 import Contact from "./sections/Contact";
 import CustomCursorProvider from "./components/CustomCursor";
 import Footer from "./components/Footer";
+import WelcomeLoader from "./components/WelcomeLoader";
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
     <div>
       <CustomCursorProvider>
+        <WelcomeLoader/>
         <NavBar isOpen={sidebarOpen} setIsOpen={setSidebarOpen} />
         <Hero />
         <About />

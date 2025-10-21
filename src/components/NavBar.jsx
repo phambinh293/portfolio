@@ -64,13 +64,13 @@ const NavBar = ({ isOpen, setIsOpen }) => {
 
   return (
     <div className="block">
-      <div className="fixed top-6 right-6 z-[9999]" onClick={toggleSideBar}>
+      <div className="fixed top-6 right-6 z-[999]" onClick={toggleSideBar}>
         <HambergerIcon active={isOpen} />
       </div>
 
       <div
         ref={sidebarRef}
-        className="fixed z-[1000] translate-x-full w-screen h-dvh bg-[#0c0c0c]/95 side-bar-bg"
+        className="fixed z-[999] translate-x-full w-screen h-dvh bg-[#0c0c0c]/95 side-bar-bg"
       >
         <div className="flex justify-end m-5" onClick={toggleSideBar}></div>
         <div className="h-full flex items-center px-10">
