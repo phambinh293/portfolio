@@ -67,7 +67,7 @@ const About = () => {
               am now eager to apply my skills to real-world projects.
             </p>
 
-            <p className="mt-4 text-gray-300 text-sm md:text-base leading-relaxed">
+            <p className="mt-4 text-gray-300 text-sm md:text-xl leading-relaxed">
               I enjoy solving UI challenges, optimizing user experience, and
               always strive to write code that is not only functional but also
               clean and maintainable.
