@@ -193,23 +193,6 @@ section {
     bottom: 100px;
     right: 50px;
   }
-
-  .tech-stack-gradient-left-box {
-    background: rgb(11, 6, 32);
-    background: linear-gradient(90deg,
-        rgba(11, 6, 32, 1) 0%,
-        rgba(11, 6, 32, 0.6601234243697479) 53%,
-        rgba(16, 11, 51, 0) 100%);
-  }
-
-  .tech-stack-gradient-right-box {
-    background: rgb(11, 6, 32);
-    background: linear-gradient(-90deg,
-        rgba(11, 6, 32, 1) 0%,
-        rgba(11, 6, 32, 0.6601234243697479) 53%,
-        rgba(16, 11, 51, 0) 100%);
-  }
-
   /* marquee */
   .marquee {
     width: 100dvw;

@@ -70,7 +70,7 @@ const NavBar = ({ isOpen, setIsOpen }) => {
 
       <div
         ref={sidebarRef}
-        className="fixed z-[999] translate-x-full w-screen h-dvh bg-[#0c0c0c]/95 side-bar-bg"
+        className="fixed z-[998] translate-x-full w-screen h-dvh bg-[#0c0c0c]/95 side-bar-bg"
       >
         <div className="flex justify-end m-5" onClick={toggleSideBar}></div>
         <div className="h-full flex items-center px-10">
