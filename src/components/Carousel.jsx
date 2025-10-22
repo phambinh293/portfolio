@@ -107,7 +107,7 @@ const Carousel = () => {
                       href={slide.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="cursor-none group inline-flex items-center gap-2 px-4 py-2 border border-blue-400 rounded-full hover:bg-blue-400 hover:text-white transition-all duration-300 shadow-md"
+                      className="cursor-none group inline-flex items-center gap-2 px-4 py-2  rounded-2xl border-2 border-b-white-50 hover:text-white transition-all duration-300 shadow-md"
                       onMouseEnter={() => {
                         setCursorActive(true);
                         setCursorText("View Demo");
