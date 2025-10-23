@@ -182,14 +182,14 @@ section {
   }
 
   .about-sphere-1 {
-    background: radial-gradient(circle, #A5CC82, #A5CC82);
+    background: radial-gradient(circle, #00f180, #009d52);
     bottom: 300px;
     right: 150px;
     animation: wander-left 10s ease-in-out infinite;
   }
 
   .about-sphere-2 {
-    background: radial-gradient(circle, #00467F, #00467F);
+    background: radial-gradient(circle, #1c34ff, #1c34ff);
     bottom: 100px;
     right: 50px;
   }

@@ -25,12 +25,12 @@ const Hero = () => {
       id="hero"
       className="md:h-screen w-screen h-dvh overflow-hidden relative text-white-50 md:p-0 px-5"
     >
-      <div className="gradient-box w-full h-96 absolute bottom-0 left-0 z-20"></div>
+      <div className="gradient-box w-full h-96 absolute bottom-0 left-0 z-[-1]"></div>
       <GradientSpheres
         sphere1Class="gradient-sphere sphere-1"
         sphere2Class="gradient-sphere sphere-2"
       />
-      <div className="w-full h-full md:mt-40 mt-20 grid lg:grid-cols-2 grid-cols-1">
+      <div className="w-full h-full md:mt-40 mt-20 grid lg:grid-cols-2 grid-cols-1 z-10">
         <div className="container relative w-full h-full col-span-1 ">
           <div className="ml-10 content md:mt-20 mt-0">
             <p className="item1 inline-block md:text-2xl text-base p-3 bg-green-700 rounded-3xl mb-1 md:mb-3">
@@ -82,11 +82,13 @@ const Hero = () => {
                   className="w-6 h-6"
                 />
                 <a
-                  href="#projects"
-                  className="md:text-xl text-sm px-2 cursor-none"
+                  href="https://drive.google.com/file/d/1zKsC_PfP_r05nJUuKkKg2TtfWx0WamKK/view?usp=drive_link"
+                  target="_blank"
+                  className="md:text-xl text-sm px-2"
                 >
                   Resume
                 </a>
+                
               </div>
               <div className="flex items-center rounded-2xl border-2 border-b-white-50">
                 <a
